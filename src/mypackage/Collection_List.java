@@ -111,10 +111,5 @@ public class Collection_List {
             System.out.println(iterator.next());
         }
 
-
-
-
-
-
     }
 }
