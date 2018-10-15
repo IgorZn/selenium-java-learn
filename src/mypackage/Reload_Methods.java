@@ -9,11 +9,24 @@ public class Reload_Methods {
         sayHello("Dima", "Vasya");
         sayHello();
         System.out.println(getSum(12,33,"1"));
+        int[] array = {1,2,35,678};
+        getSum(array, "Oooooo");
     }
 
     static int getSum(int x, int y){
         int sum;
         sum = x + y;
+        return sum;
+    }
+
+
+    static int getSum(int[] array, String name){
+        int sum = 0;
+        for (int i=0; i < array.length; i++){
+            sum += array[i];
+        }
+        System.out.println("The sum is: "+sum);
+        System.out.println("Yo! "+ name + "!");
         return sum;
     }
 
