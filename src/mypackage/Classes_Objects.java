@@ -1,12 +1,23 @@
 package mypackage;
 
-import javax.sound.midi.Soundbank;
-import java.util.logging.SocketHandler;
-
 public class Classes_Objects {
+    public Classes_Objects(){
+        System.out.println("New Car created!");
+    }
+
+    public Classes_Objects(String color){
+        this.color = color;
+    }
+
+    public Classes_Objects(String color, int weight, int length){
+        this.color = color;
+        this.weight = weight;
+        this.length = length;
+    }
+
     int height;
     int width;
-    int lenght;
+    int length;
     int weight;
     int maxWeight = 2700;
     String color;
